@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(154, 154, 154);
+    text-align: center;
+    max-width: 1200px;
+}
+
+h1 {
+    color: rgb(34, 34, 34);
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: rgb(34, 34, 34); }
+    50% { color: rgb(0, 0, 0); }
+    100% { color: rgb(34, 34, 34); }
+}
+
+marquee {
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.4);
+}
+
+p {
+    font-size: 22px;
+    color: rgb(34, 34, 34);
+    text-align: left;
+}
+
+ul {
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    text-align: left;
+}
+
+table {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-collapse: separate;
+    margin-bottom: 20px;
+    color: rgb(34, 34, 34);
+}
+
+th, td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-button {
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.2);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    marquee {
+        font-size: 24px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .footer-button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-button {
+        width: 100%;
+    }
+}
