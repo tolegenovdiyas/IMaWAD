@@ -1,0 +1,43 @@
+img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px black;
+    margin: 10px;
+}
+img:hover {
+    transform: scale(1.5);
+}
+body{
+    background-color: #013220 ;
+}
+.roll-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+    font-size: 20px; 
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #ff0000, #0004ff);
+    border: none; 
+    border-radius: 8px;
+    color: white;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+.roll-btn:hover {
+    background: linear-gradient(90deg, #0004ff, #ff0000); 
+    transform: translateY(-2px);
+}
+.roll-btn:active {
+    background: linear-gradient(90deg, #d9455f, #c93768); 
+    transform: translateY(0); 
+}
+#winnerText {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffcc00; 
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); 
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+#winnerText:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
